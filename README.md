@@ -1,4 +1,4 @@
-# Expandy
+# 🏋 Expandy
 
 <center>
   <p>Flutter expansor component<p>
