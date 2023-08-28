@@ -3,7 +3,7 @@ part of './expandy.dart';
 extension ExpandyContent on ExpandyState {
   AnimatedContainer expandyContainer() {
     return AnimatedContainer(
-      key: const Key('expander_content'),
+      key: const Key('expandy_content'),
       curve: Curves.fastOutSlowIn,
       duration: const Duration(milliseconds: 300),
       clipBehavior: Clip.hardEdge,

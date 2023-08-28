@@ -9,7 +9,7 @@ extension ExpandyHeader on ExpandyState {
       color: widget.backgroundColor ?? backgroundColor,
       child: InkWell(
         splashColor: widget.backgroundColor ?? backgroundColor,
-        key: const Key('expander_header'),
+        key: const Key('expandy_header'),
         onTap: toggleExpansion,
         child: Container(
           padding: widget.titlePadding,

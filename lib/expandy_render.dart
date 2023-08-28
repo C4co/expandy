@@ -5,7 +5,7 @@ extension ExpandyRender on ExpandyState {
     var backgroundColor = Theme.of(context).colorScheme.surfaceVariant;
 
     return Container(
-      key: const Key('expander_container'),
+      key: const Key('expandy_container'),
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(
