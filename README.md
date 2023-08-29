@@ -1,9 +1,7 @@
-# 🏋 Expandy
+# 🏋 Expandy [![Expandy](https://github.com/C4co/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/expandy/actions/workflows/dart.yml)
 
-<center>
-  <p>Flutter expansor component<p>
-  <img src="./example.gif" width={350} />
-</center>
+<p>Flutter expansor component<p>
+<img src="./example.gif" width={350} />
 
 ### Install
 
