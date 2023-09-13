@@ -1,9 +1,10 @@
 # 🏋 Expandy [![Expandy](https://github.com/C4co/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/expandy/actions/workflows/dart.yml)
 
-<p>Flutter expansor component<p>
-<img src="./example.gif" width={350} />
+| Example                                 |
+| --------------------------------------- |
+| <img src="./example.gif" width={350} /> |
 
-### Install
+## Install
 
 `pubspec.yml`
 ```yml
@@ -13,7 +14,7 @@ dependencies:
       url: https://github.com/C4co/expandy.git
 ```
 
-### Usage
+## Usage
 
 ```dart
   Expandy(
@@ -51,7 +52,7 @@ dependencies:
 
 ```
 
-### Properties
+## Properties
 
 | Name              | Type           | Description                  |
 | ----------------- | -------------- | ---------------------------- |
