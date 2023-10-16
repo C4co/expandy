@@ -1,7 +1,22 @@
-part of './expandy.dart';
+import 'package:flutter/material.dart';
+import './expandy.dart';
 
-extension ExpandyHeader on ExpandyState {
-  Material expandyHeader() {
+typedef OnExpansionChanged = void Function();
+
+class ExpandyHeader extends StatelessWidget {
+  final Expandy widget;
+  final AnimationController? animationController;
+  final OnExpansionChanged toggleExpansion;
+
+  const ExpandyHeader({
+    super.key,
+    required this.widget,
+    this.animationController,
+    required this.toggleExpansion,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     var backgroundColor = Theme.of(context).colorScheme.surfaceVariant;
     var titleColor = Theme.of(context).colorScheme.onBackground;
 
@@ -30,7 +45,7 @@ extension ExpandyHeader on ExpandyState {
               ),
               RotationTransition(
                 turns:
-                    Tween(begin: 0.0, end: 0.25).animate(_animationController!),
+                    Tween(begin: 0.0, end: 0.25).animate(animationController!),
                 child: Icon(
                   Icons.keyboard_arrow_right,
                   color: titleColor,

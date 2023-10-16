@@ -2,9 +2,8 @@ library expandy;
 
 import 'package:flutter/material.dart';
 
-part './expandy_header.dart';
-part './expandy_content.dart';
-part './expandy_render.dart';
+import './expandy_header.dart';
+import './expandy_container.dart';
 
 class Expandy extends StatefulWidget {
   final List<Widget> children;
@@ -71,6 +70,36 @@ class ExpandyState extends State<Expandy> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return render();
+    var backgroundColor = Theme.of(context).colorScheme.surfaceVariant;
+
+    return Container(
+      key: const Key('expandy_container'),
+      clipBehavior: Clip.hardEdge,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(
+          Radius.circular(widget.borderRadius),
+        ),
+        color: widget.backgroundColor ?? backgroundColor,
+      ),
+      child: Wrap(
+        children: [
+          ExpandyHeader(
+            widget: widget,
+            animationController: _animationController,
+            toggleExpansion: toggleExpansion,
+          ),
+          if (!_isLoaded)
+            Wrap(
+              key: _contentKey,
+              children: widget.children,
+            ),
+          if (_isLoaded)
+            ExpandyContainer(
+              height: _height,
+              widget: widget,
+            ),
+        ],
+      ),
+    );
   }
 }
