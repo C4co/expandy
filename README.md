@@ -1,4 +1,7 @@
-# 🏋 Expandy [![Expandy](https://github.com/C4co/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/expandy/actions/workflows/dart.yml)
+# 🏋 Expandy
+
+![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
+[![Expandy](https://github.com/C4co/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/expandy/actions/workflows/dart.yml)
 
 | Example                                 |
 | --------------------------------------- |
