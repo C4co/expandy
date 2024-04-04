@@ -5,7 +5,7 @@
 
 | Example                                 |
 | --------------------------------------- |
-| <img src="./example.gif" width={350} /> |
+| <img src="./example.gif" width={450} /> |
 
 ## Install
 
