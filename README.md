@@ -1,7 +1,7 @@
 # 🏋 Expandy
 
 ![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
-[![Expandy](https://github.com/C4co/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/expandy/actions/workflows/dart.yml)
+[![Expandy](https://github.com/callorsnc/expandy/actions/workflows/dart.yml/badge.svg)](https://github.com/callorsnc/expandy/actions/workflows/dart.yml)
 
 | Example                                 |
 | --------------------------------------- |
@@ -14,7 +14,7 @@
 dependencies:
   imgy:
     git:
-      url: https://github.com/C4co/expandy.git
+      url: https://github.com/carllosnc/expandy.git
 ```
 
 ## Usage
